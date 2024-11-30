@@ -1,0 +1,19 @@
+pipeline{
+    agent any
+
+    stages{
+        stage('install-env'){
+            steps{
+                sh 'npm install'
+            }
+            post{
+                success{
+                    echo "Successful intall npm"
+                }
+                failure{
+                    echo "Fail install nmp"
+                }
+            }
+        }
+    }
+}
