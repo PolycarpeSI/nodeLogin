@@ -22,7 +22,8 @@ pipeline{
             }
         }
         stage('package'){
-            steps{
+            steps{ 
+                
                 sh 'rm -rf *tgz || echo ""'
                 sh 'npm pack'
             }
