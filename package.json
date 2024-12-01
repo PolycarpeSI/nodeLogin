@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "utc-app",
   "version": "1.2.0",
   "description": "Creating node application with login screen and testing it using Selenium",
   "main": "index.js",
@@ -8,11 +8,12 @@
     "start": "node index.cjs",
     "test": "npx mocha test/end-to-end.test.mjs"
   },
-  "author": "Utrains",
+  "author": "Poly",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2",
-    "my-app": "file:"
+    "my-app": "file:",
+    "utc-app": "file:"
   },
   "devDependencies": {
     "chai": "^5.1.0",
